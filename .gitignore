@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+*.vsix
+*.tgz
+dist/
+out/
+lib/
