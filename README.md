@@ -39,7 +39,7 @@ damiaotaipiu@gmail.com
 ---
 
 
-### Para usar e abusar
+# Para usar e abusar
 ## 📦 Como gerar o pacote `.vsix` da extensão
 
 Você pode empacotar a extensão para distribuir ou instalar manualmente com os seguintes passos:
