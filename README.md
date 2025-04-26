@@ -4,6 +4,10 @@
 
 Ideal para desenvolvedores que mantêm bibliotecas internas e querem integrá-las rapidamente com apps frontend locais.
 
+**libDrop** is an extension for VSCode/Windsurf that automates the process of building, packaging, and locally installing Angular libraries into front-end projects.
+
+Ideal for developers who maintain internal libraries and want to quickly integrate them with local frontend apps.
+
 Clonem e alterem à vontade!
 
 Repositório:
