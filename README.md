@@ -4,6 +4,12 @@
 
 Ideal para desenvolvedores que mantêm bibliotecas internas e querem integrá-las rapidamente com apps frontend locais.
 
+Clonem e alterem à vontade!
+
+
+Sugestõe por email:
+damiaotaipiu@gmail.com
+
 ---
 
 ## ✨ Funcionalidades
@@ -38,8 +44,9 @@ vsce package
 ```
 
 Um arquivo .vsix será gerado, por exemplo:
-
+```bash
 lib-drop-0.0.1.vsix
+```
 
 ### 📥 Como instalar o .vsix no VSCode
 No VSCode, pressione Ctrl+Shift+P.
