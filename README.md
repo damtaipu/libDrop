@@ -6,6 +6,11 @@ Ideal para desenvolvedores que mantêm bibliotecas internas e querem integrá-la
 
 Clonem e alterem à vontade!
 
+Repositório:
+https://github.com/damtaipu/libDrop
+
+Link da extensão no Loja:
+(https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop)[https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop]
 
 Sugestõe por email:
 damiaotaipiu@gmail.com
@@ -25,7 +30,7 @@ damiaotaipiu@gmail.com
 
 ## 🚀 Como usar
 
-1. **Abra o projeto da biblioteca Angular** no VSCode.
+1. **Abra o projeto da biblioteca Angular** no VSCode/WindSurf.
 2. Pressione `Ctrl+Shift+P` e escolha a opção: libDrop:
 3. Informe o diretório absoluto projeto front-end (raiz do front-end).
 4. Escolha o gerenciador de pacotes (npm, yarn ou pnpm).
@@ -33,6 +38,8 @@ damiaotaipiu@gmail.com
 
 ---
 
+
+### Para usar e abusar
 ## 📦 Como gerar o pacote `.vsix` da extensão
 
 Você pode empacotar a extensão para distribuir ou instalar manualmente com os seguintes passos:

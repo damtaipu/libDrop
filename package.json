@@ -1,16 +1,20 @@
 {
-  "name": "libDrop",
-  "displayName": "libDrop",
+  "name": "libdrop",
+  "displayName": "LibDrop",
   "description": "Gera o pacote da biblioteca Angular e instala automaticamente no projeto frontend para testes locais.",
   "version": "0.0.1",
   "author": "damTaipu",
+  "publisher": "josDamTaipu",
   "engines": {
     "vscode": "^1.99.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damtaipu/libDrop"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
