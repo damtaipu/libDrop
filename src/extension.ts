@@ -20,23 +20,35 @@ export function activate(context: vscode.ExtensionContext) {
 
     try {
       const frontendPath = await vscode.window.showInputBox({
-        prompt: 'Digite o caminho absoluto do projeto frontend',
-        value: path.resolve(rootPath)
+        prompt: 'Digite o caminho absoluto do projeto Front-end',
+        value: path.resolve()
       });
+
 
       if (!frontendPath || !fs.existsSync(frontendPath)) {
         vscode.window.showErrorMessage('Caminho inválido para o projeto frontend.');
         return;
       }
 
+      const buildCommand = await vscode.window.showInputBox({
+        placeHolder: 'Informe o comando para build da biblioteca (ex: npm run build design-system)',
+        prompt: 'Digite o comando que a biblioteca usa para ser buildada',
+        validateInput: (input) => {
+          // Validação simples para garantir que algo foi informado
+          return input ? null : 'Comando não pode ser vazio!';
+        },
+      });
+
+      const commandParts = buildCommand!.split(' ');
+
       const packageManager = await vscode.window.showQuickPick(['npm', 'yarn', 'pnpm'], {
-        placeHolder: 'Escolha o gerenciador de pacotes para instalar o pacote no frontend',
+        placeHolder: 'Escolha o package manager para instalar a lib no Front-end',
       });
 
       if (!packageManager) {return;}
 
       log('📦 Iniciando build da biblioteca...');
-      await runCommandWithLogs('npm', ['run', 'build', 'design-system'], rootPath, log);
+      await runCommandWithLogs(commandParts[0], commandParts.slice(1), rootPath, log);
 
       const distFolder = fs.readdirSync(path.join(rootPath, 'dist'))[0];
       const distPath = path.join(rootPath, 'dist', distFolder);
@@ -117,7 +129,7 @@ function getLogWebviewHtml(): string {
     <!DOCTYPE html>
     <html lang="en">
     <body style="font-family: monospace; padding: 1rem; background: #fff;">
-      <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="80" />
+      <img src="https://raw.githubusercontent.com/damtaipu/libDrop/refs/heads/main/assets/icon.png" width="80" />
       <h2>Status da Sincronização</h2>
       <pre id="log" style="white-space: pre-wrap; color: #0317fc; background: #f5f5f5; padding: 1rem; border-radius: 8px; max-height: 70vh; overflow-y: auto;"></pre>
 

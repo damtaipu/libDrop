@@ -2,7 +2,7 @@
   "name": "libdrop",
   "displayName": "LibDrop",
   "description": "Gera o pacote da biblioteca Angular e instala automaticamente no projeto frontend para testes locais.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "damTaipu",
   "publisher": "josDamTaipu",
   "engines": {
