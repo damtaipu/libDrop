@@ -7,12 +7,15 @@ Ideal para desenvolvedores que mantêm bibliotecas internas e querem integrá-la
 Clonem e alterem à vontade!
 
 Repositório:
+
 https://github.com/damtaipu/libDrop
 
 Link da extensão no Loja:
-(https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop)[https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop]
+
+https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop
 
 Sugestõe por email:
+
 damiaotaipiu@gmail.com
 
 ---
