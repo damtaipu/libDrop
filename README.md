@@ -1,6 +1,6 @@
 # libDrop - Automação de Build e Instalação Local de Bibliotecas Angular
 
-# Como Usar a Extensão **libDrop**
+# 🚀 Como Usar a Extensão **libDrop**
 
 1. **Abra o VSCode** e no seu projeto Angular, pressione `Ctrl+Shift+P` para abrir a paleta de comandos.
    
@@ -63,17 +63,6 @@ damiaotaipiu@gmail.com
 - 🧾 Logs exibidos em tempo real no painel "Output" do VSCode.
 
 ---
-
-## 🚀 Como usar
-
-1. **Abra o projeto da biblioteca Angular** no VSCode/WindSurf.
-2. Pressione `Ctrl+Shift+P` e escolha a opção: libDrop:
-3. Informe o diretório absoluto projeto front-end (raiz do front-end).
-4. Escolha o gerenciador de pacotes (npm, yarn ou pnpm).
-5. Acompanhe os logs em tempo real durante o processo.
-
----
-
 
 # Para usar e abusar
 ## 📦 Como gerar o pacote `.vsix` da extensão
