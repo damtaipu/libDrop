@@ -18,7 +18,7 @@ Link da extensão no Loja:
 
 https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop
 
-Sugestõe por email:
+Contato:
 
 damiaotaipiu@gmail.com
 
