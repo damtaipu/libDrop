@@ -1,24 +1,29 @@
-# libDrop
+# libDrop - Automação de Build e Instalação Local de Bibliotecas Angular
 
-**libDrop** é uma extensão para o VSCode/Windsurf que automatiza o processo de build, empacotamento e instalação local de bibliotecas Angular em projetos front-end.
+## Como Funciona:
+O **libDrop** automatiza o processo de build, empacotamento e instalação de bibliotecas Angular no seu projeto frontend local. Com apenas um comando, você pode gerar o pacote da sua biblioteca Angular, copiá-lo para o seu projeto frontend e instalar automaticamente as dependências, facilitando o processo de testes e desenvolvimento.
 
-Ideal para desenvolvedores que mantêm bibliotecas internas e querem integrá-las rapidamente com apps frontend locais.
+## Problema que Resolve:
+Desenvolvedores de bibliotecas internas geralmente enfrentam o desafio de integrar rapidamente essas bibliotecas com os projetos frontend. O **libDrop** elimina a necessidade de copiar e instalar pacotes manualmente, economizando tempo e evitando erros ao testar mudanças nas bibliotecas Angular em projetos locais.
 
-**libDrop** is an extension for VSCode/Windsurf that automates the process of building, packaging, and locally installing Angular libraries into front-end projects.
+## How It Works:
+**libDrop** automates the process of building, packaging, and locally installing Angular libraries in your frontend project. With just one command, you can generate the package for your Angular library, copy it to your frontend project, and automatically install the dependencies, making the testing and development process easier.
 
-Ideal for developers who maintain internal libraries and want to quickly integrate them with local frontend apps.
+## Problem It Solves:
+Internal library developers often face the challenge of quickly integrating these libraries with frontend projects. **libDrop** eliminates the need to manually copy and install packages, saving time and preventing errors when testing changes in Angular libraries in local projects.
+
 
 Clonem e alterem à vontade!
 
-Repositório:
+### Repositório:
 
 https://github.com/damtaipu/libDrop
 
-Link da extensão no Loja:
+### Link da extensão no Loja:
 
 https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop
 
-Contato:
+### Contato
 
 damiaotaipiu@gmail.com
 
