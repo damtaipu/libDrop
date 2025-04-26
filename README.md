@@ -36,29 +36,6 @@ Desenvolvedores de bibliotecas internas geralmente enfrentam o desafio de integr
 ## Problem It Solves:
 Internal library developers often face the challenge of quickly integrating these libraries with frontend projects. **libDrop** eliminates the need to manually copy and install packages, saving time and preventing errors when testing changes in Angular libraries in local projects.
 
-# Como Usar a Extensão **libDrop**
-
-1. **Abra o VSCode** e no seu projeto Angular, pressione `Ctrl+Shift+P` para abrir a paleta de comandos.
-   
-2. **Escolha o comando** `libDrop: Execute libDrop`.
-
-3. **Informe o caminho absoluto do projeto frontend**:
-   - Será solicitado o caminho completo para o diretório onde está o seu projeto frontend. Por exemplo: `C:/meu-projeto/frontend`.
-
-4. **Informe a linha de comando para buildar sua biblioteca**:
-   - Digite o comando que você utiliza para fazer o build da sua biblioteca, como:
-     - `npm run build`
-     - ou `yarn build`
-   
-5. **Escolha o gerenciador de pacotes (package manager)**:
-   - Selecione o gerenciador de pacotes que você usa para instalar dependências no seu projeto frontend. As opções incluem:
-     - `npm`
-     - `yarn`
-     - `pnpm`
-
-6. **Aguarde enquanto o processo de build e instalação é realizado**:
-   - A extensão vai gerar o pacote `.tgz` da sua biblioteca, copiá-lo para o diretório do seu projeto frontend e instalar as dependências automaticamente.
-
 
 Clonem e alterem à vontade!
 
@@ -70,7 +47,7 @@ https://github.com/damtaipu/libDrop
 
 https://marketplace.visualstudio.com/items/?itemName=josDamTaipu.libdrop
 
-### Contato
+### Contato:
 
 damiaotaipiu@gmail.com
 
