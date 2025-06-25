@@ -63,22 +63,28 @@ export function activate(context: vscode.ExtensionContext) {
 
       // Executa o gerenciador de pacotes
       log(`🔧 Instalando dependências com ${packageManager}...`);
-      
-      let installArgs: string[] = [];
+    
 
-      switch (packageManager) {
-        case 'npm':
-          installArgs = ['install', `${tgzName}`];
-          break;
-        case 'yarn':
-          installArgs = ['add', `${tgzName}`];
-          break;
-        case 'pnpm':
-          installArgs = ['add', `${tgzName}`];
-          break;
-      }
+        // Caminho relativo, pois o arquivo .tgz está dentro do frontendPath
+        const tgzRelativePath = `./${tgzName}`;
 
-      await runCommandWithLogs(packageManager, installArgs, frontendPath, log);
+        let installArgs: string[] = [];
+
+        switch (packageManager) {
+          case 'npm':
+            installArgs = ['install', tgzRelativePath];
+            break;
+          case 'yarn':
+            installArgs = ['add', tgzRelativePath];
+            break;
+          case 'pnpm':
+            installArgs = ['add', tgzRelativePath];
+            break;
+        }
+
+        log(`🔧 Instalando dependências com ${packageManager}...`);
+        await runCommandWithLogs(packageManager, installArgs, frontendPath, log);
+
 
       log('✅ Tudo pronto! Lib instalada no frontend com sucesso!');
     } catch (err: any) {
