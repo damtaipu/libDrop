@@ -63,7 +63,22 @@ export function activate(context: vscode.ExtensionContext) {
 
       // Executa o gerenciador de pacotes
       log(`🔧 Instalando dependências com ${packageManager}...`);
-      await runCommandWithLogs(packageManager, ['install', `${tgzName}`], frontendPath, log);
+      
+      let installArgs: string[] = [];
+
+      switch (packageManager) {
+        case 'npm':
+          installArgs = ['install', `${tgzName}`];
+          break;
+        case 'yarn':
+          installArgs = ['add', `${tgzName}`];
+          break;
+        case 'pnpm':
+          installArgs = ['add', `${tgzName}`];
+          break;
+      }
+
+      await runCommandWithLogs(packageManager, installArgs, frontendPath, log);
 
       log('✅ Tudo pronto! Lib instalada no frontend com sucesso!');
     } catch (err: any) {
