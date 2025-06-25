@@ -72,6 +72,12 @@ Você pode empacotar a extensão para distribuir ou instalar manualmente com os 
 ### 1. Instale o `vsce` (caso ainda não tenha):
 ```bash
 npm install -g @vscode/vsce
+```
+
+depois execute os comandos:
+
+```bash
+npm i
 vsce package
 ```
 
